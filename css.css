@@ -53,15 +53,17 @@ p {
         text-underline-offset: 8px; /*字根底線距離*/
     }
 }
-
+.content_BG {
+    background: linear-gradient(135deg, #b482ca 0%, #5a4da6 100%);
+}
 .content {
     display: flex;
     align-items: center;
     gap: 30px;
     padding-left: 150px;
     padding-right: 120px;
-    padding-top: 100px;
-    background: linear-gradient(135deg, #b482ca 0%, #5a4da6 100%);
+    padding-top: 30px;
+
 
     .about {
         flex: 2;
@@ -70,10 +72,127 @@ p {
     .image-content {
         flex: 1;
         padding: 30px;
+        position: relative;
     }
     .image-content img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        transition: transform 0.5s ease-in-out;
+    }
+    .image-content img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.containerOC {
+    height: 100%;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 120px;
+    gap: 30px;
+
+    .OC1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .OC2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .card {
+        width: 200px;
+        height: 250px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+
+        a{
+            text-decoration: none;
+        }
+
+
+    }
+    .card img {
+        width: 100%;
+        height: 150%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+
+    }
+
+    .card.medmia img {/*分細項!!!!*/
+        width: 100%;
+        height: 160%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+    }
+    .card.mone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+    }
+    .card.mireya img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+    }
+    .card.blythe img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+    }
+    .card.rethiz img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+        z-index: 10;
+    }
+    .card h3 {
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        font-size: 1.5em;
+        font-weight: 900;
+        text-align: center;
+        color: white;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    .card:hover {
+        transform: scale(1.2);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     }
 }
