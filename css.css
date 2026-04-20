@@ -58,7 +58,22 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 200px;
+    padding-left: 150px;
+    padding-right: 120px;
     padding-top: 100px;
     background: linear-gradient(135deg, #b482ca 0%, #5a4da6 100%);
+
+    .about {
+        flex: 2;
+        padding: 20px;
+    }
+    .image-content {
+        flex: 1;
+        padding: 30px;
+    }
+    .image-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
 }
