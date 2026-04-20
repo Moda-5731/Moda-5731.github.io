@@ -18,16 +18,16 @@ p {
     margin: 0;
     top: 0;
     left: 0;
-    background-color: #42045a;
+    background-color: #b482ca;
     width: 100%;
     position: relative;
 }
 .cover_banner h1 {
     color: white;
-    font-size: 150px;
+    font-size: 100px;
     position: absolute;
     top: 80px;
-    left: 200px;
+    left: 150px;
     z-index: 30;
     text-decoration-line: underline ;
     text-decoration-thickness: 3px;
@@ -35,7 +35,7 @@ p {
 }
 .cover_banner img {
     width: 100%;
-    height: 680px;
+    height: 60%;
     z-index: 10;
 }
 
