@@ -39,20 +39,7 @@ p {
     z-index: 10;
 }
 
-@media (max-width: 768px) {
-    /* 此處是請gemini幫忙的，想搞手機板*/
-    .cover_banner h1 {
-        color: white;
-        font-size: 30px;
-        position: absolute;
-        top: 20px;
-        left: 30px;
-        z-index: 30;
-        text-decoration-line: underline ;
-        text-decoration-thickness: 3px;
-        text-underline-offset: 8px; /*字根底線距離*/
-    }
-}
+
 .content_BG {
     padding: 20px;
     background: linear-gradient(135deg, #b482ca 0%, #5a4da6 100%);
@@ -216,4 +203,46 @@ p {
 
 .footer {
 height: 100px;
+}
+
+@media (max-width: 768px) {
+    /* 此處是請gemini幫忙的，想搞手機板*/
+    .cover_banner h1 {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        z-index: 30;
+        text-decoration-line: underline ;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px; /*字根底線距離*/
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding-left: 20px;
+
+
+        .about {
+            flex: 2;
+            padding: 10px;
+        }
+        .image-content {
+            flex: 1;
+            padding: 15px;
+            position: relative;
+        }
+        .image-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-content img:hover {
+            transform: scale(1.2);
+        }
+    }
+
 }
